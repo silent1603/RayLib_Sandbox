@@ -1,0 +1,16 @@
+[submodule "Vendors/raylib"]
+	path = Vendors/raylib
+	url = https://github.com/raysan5/raylib.git
+	branch = master
+[submodule "Vendors/jolt"]
+	path = Vendors/jolt
+	url = https://github.com/jrouwe/JoltPhysics.git
+	branch = master
+[submodule "Vendors/box2d"]
+	path = Vendors/box2d
+	url = https://github.com/erincatto/box2d.git
+	branch = main
+[submodule "Vendors/rlImGui"]
+	path = Vendors/rlImGui
+	url = https://github.com/raylib-extras/rlImGui.git
+	branch = main
