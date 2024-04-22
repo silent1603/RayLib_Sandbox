@@ -36,7 +36,14 @@ add_subdirectory(Vendors/jolt/Build)
 
 
 file(GLOB_RECURSE PROJECT_HEADERS Game/Src/*.hpp Game/Src/*.h)
-file(GLOB_RECURSE PROJECT_SOURCES Game/Src/*.cpp)
+file(GLOB_RECURSE PROJECT_SOURCES Game/Src/*.cpp 
+                    Vendors/rlImGui/rlImGui.cpp 
+                    Vendors/imgui/imgui.cpp 
+                    Vendors/imgui/imgui_tables.cpp 
+                    Vendors/imgui/imgui_widgets.cpp 
+                    Vendors/imgui/imgui_draw.cpp 
+                    Vendors/imgui/backends/imgui_impl_glfw.cpp 
+                    Vendors/imgui/backends/imgui_impl_opengl3.cpp)
 file(GLOB_RECURSE PROJECT_SHADERS Game/Shaders/*.comp
                           Game/Shaders/*.frag
                           Game/Shaders/*.geom
@@ -68,6 +75,7 @@ target_include_directories(Game PUBLIC "${PROJECT_SOURCE_DIR}/Game/Sources/"
                                PUBLIC "${PROJECT_SOURCE_DIR}/Vendors/raylib/" 
                                PUBLIC "${PROJECT_SOURCE_DIR}/Vendors/box2d/include/" 
                                PUBLIC "${PROJECT_SOURCE_DIR}/Vendors/rlImGui/" 
+                               PUBLIC "${PROJECT_SOURCE_DIR}/Vendors/imgui/" 
                                PUBLIC "${PROJECT_SOURCE_DIR}/Vendors/imgui/backends/")
 
 if (MSVC)

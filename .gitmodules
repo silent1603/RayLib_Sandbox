@@ -14,3 +14,7 @@
 	path = Vendors/rlImGui
 	url = https://github.com/raylib-extras/rlImGui.git
 	branch = main
+[submodule "Vendors/imgui"]
+	path = Vendors/imgui
+	url = https://github.com/ocornut/imgui.git
+	branch = docking

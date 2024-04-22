@@ -38,8 +38,15 @@ int main(int argc, char **argv)
             ClearBackground(RAYWHITE);
 
             DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
+            
+            //imgui     
+            {
             rlImGuiBegin();	
-            rlImGuiEnd();	
+            ImGui::Text("This is some useful text.");
+            
+            rlImGuiEnd();
+            }	
+        
         EndDrawing();
         //----------------------------------------------------------------------------------
     }
